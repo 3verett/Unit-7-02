@@ -1,8 +1,8 @@
 // Connects the function "indentify" to the "Check" button.
-document.getElementById('button').addEventListener('click', indentify)
+document.getElementById('button').addEventListener('click', identify)
 let numberInput = 0
 
-function indentify () {
+function identify () {
   // Gets the number typed by user and converts to an integer.
   numberInput = document.getElementById('input').value
   numberInput = parseInt(numberInput)
@@ -24,7 +24,7 @@ function indentify () {
   }
 
   else {
-    // If the user did not input a valid interger then it will display "Please enter a valid interger"
+    // If the user did not input a valid integer then it will display "Please enter a valid integer"
     document.getElementById('answer').innerHTML = 'Please enter a valid integer.'
   }
 }
